@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AkaZip Support · 支持</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --support-canvas: Canvas;
+  --support-text: CanvasText;
+  --support-muted: #6D6D6D;
+  --support-link: LinkText;
+  --support-space-edge: 24px;
+  --support-space-block: 16px;
+  --support-space-section: 40px;
+  --support-space-top: 48px;
+  background: var(--support-canvas);
+  color: var(--support-text);
+  scrollbar-color: auto;
+  scrollbar-width: auto;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --support-muted: #AAAAAA; }
+}
+body {
+  max-width: 760px;
+  margin: var(--support-space-top) auto;
+  padding: 0 var(--support-space-edge);
+  font: 16px/1.6 system-ui, sans-serif;
+}
+main, section { display: flex; flex-direction: column; }
+main { gap: var(--support-space-section); }
+section { gap: var(--support-space-block); }
+h1, h2, p { margin: 0; }
+h1, h2 { font-size: 28px; }
+.meta { color: var(--support-muted); font-size: 14px; }
+a { color: var(--support-link); }
+</style>
+</head>
+<body>
+<main>
+  <section lang="en" aria-labelledby="support-en">
+    <h1 id="support-en">AkaZip Support</h1>
+    <p class="meta">Bonboludus Studio</p>
+    <p>For service, subscription or privacy questions, contact <a href="mailto:bonboludus@gmail.com">bonboludus@gmail.com</a>.</p>
+  </section>
+  <section lang="zh-Hans" aria-labelledby="support-zh">
+    <h2 id="support-zh">AkaZip 支持</h2>
+    <p class="meta" lang="en">Bonboludus Studio</p>
+    <p>服务、订阅或隐私问题可联系 <a href="mailto:bonboludus@gmail.com" lang="en">bonboludus@gmail.com</a>。</p>
+  </section>
+</main>
+</body>
+</html>
